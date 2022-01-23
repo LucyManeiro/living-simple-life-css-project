@@ -1,0 +1,80 @@
+body {
+    margin: 0;    
+}
+
+h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.375rem;
+    color: #143774;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 3em;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #707070;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+.subtitle {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 1rem;
+    font-weight: 700; 
+    color: #1792D2;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
