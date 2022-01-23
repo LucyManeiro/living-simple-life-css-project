@@ -1,53 +1,73 @@
 body {
     margin: 0;    
+    font-family: 'Ubuntu', sans-serif;
 }
+
+
+/* ==========
+ Typography
+ ===========*/
 
 h1 {
     font-family: 'Lora', serif;
-    font-size: 3.375rem;
+    font-weight: 400;
+    font-size: 2rem;
     color: #143774;
     margin: 0;
 }
+
+.subtitle {
+    font-size: .75rem;
+    font-weight: 700; 
+    color: #1792D2;
+    margin: 0;
+}
+
+/*======
+Layout
+======*/
 
 header {
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: #f8f8f8;
-    padding: 3em;
+    padding: 2em 0;
 }
 
-ul{
+/* Navigation */
+
+.nav-list{
     display: flex;
     list-style: none;
+    padding: 0;
     justify-content: center;
 }
 
-li {
-    margin: 5px;
-    font-family: 'Ubuntu',sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
+.nav-list-item {
+    margin: 0 1em;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     color: #707070;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: .25em 0
 }
 
 a:hover,
 a:focus {
-    text-decoration: underline;
-}
-
-.subtitle {
-    font-family: 'Ubuntu', sans-serif;
-    font-size: 1rem;
-    font-weight: 700; 
     color: #1792D2;
-    margin: 0;
 }
 
+.current-page {
+    border-bottom: 1px solid #707070
+}
+
+.current-page:hover {
+    color: #707070;
+}
 
 
 
