@@ -27,10 +27,20 @@ h1 {
 Layout
 ======*/
 
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
 header {
     display: flex;
     flex-direction: column;
-    text-align: center;
     background-color: #f8f8f8;
     padding: 2em 0;
 }
@@ -45,7 +55,7 @@ header {
 }
 
 .nav-list-item {
-    margin: 0 1em;
+    margin-left: 2em;
 }
 
 .nav-link {
@@ -69,10 +79,24 @@ a:focus {
     color: #707070;
 }
 
+@media (max-width: 675px){
+    .container-nav {
+        flex-direction: column;
+    }
 
+    header {
+        text-align: center
+    }
 
+    .nav-list{
+        flex-direction:column;
+    }
 
+    .nav-list-item {
+        margin: .5em 0;
+    }
 
+}
 
 
 
