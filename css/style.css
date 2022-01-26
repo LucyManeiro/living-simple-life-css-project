@@ -1,27 +1,83 @@
 body {
     margin: 0;    
     font-family: 'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+    color: #707070;
+    font-weight: 300;
 }
 
+img {
+    max-width: 100%;
+    display: block;
+}
 
 /* ==========
  Typography
  ===========*/
 
-h1 {
+h1,
+h2,
+h3 {
     font-family: 'Lora', serif;
     font-weight: 400;
-    font-size: 2rem;
     color: #143774;
+}
+
+h1 {
+    font-size: 2rem;
+    
     margin: 0;
 }
 
+
+a {
+    color: #1792D2
+}
+
+a:hover,
+a:focus {
+    color: #143774
+}
+
+strong {
+    font-weight: 700;
+}
+
+.article-info {
+    margin: 2em 0;
+}
+
+
+/* logo subtitle */
 .subtitle {
     font-size: .75rem;
     font-weight: 700; 
     color: #1792D2;
     margin: 0;
 }
+
+.article-info,
+.article-read-more {
+    font-size: 0.875rem;
+}
+
+.article-read-more {
+    color: #1792D2;
+    text-decoration: none; 
+    font-weight: 700; 
+}
+
+.article-title {
+    font-size: 1.5rem;
+}
+
+.article-read-more:hover,
+.article-read-more:focus {
+    color: #143774;
+    text-decoration: underline;
+}
+
+
 
 /*======
 Layout
@@ -33,9 +89,10 @@ Layout
     margin: 0 auto;
 }
 
-.container-nav {
+.container-flex {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 header {
@@ -43,8 +100,41 @@ header {
     flex-direction: column;
     background-color: #f8f8f8;
     padding: 2em 0;
+    text-align: center
 }
 
+.article-image {
+    width: 100%;
+    max-width: 100%;
+}
+
+footer {
+    background-color: #143774;
+    padding: 1em;
+    text-align: center;
+}
+
+/* main {
+    width: 75%;
+}
+
+aside {
+    width: 20%
+} */
+
+@media (min-width: 675px){
+    .container-flex {
+        flex-direction: row;
+    }
+
+    main {
+        width: 75%
+    }
+
+    aside {
+        width: 20%
+    }
+}
 /* Navigation */
 
 .nav-list{
@@ -80,13 +170,6 @@ a:focus {
 }
 
 @media (max-width: 675px){
-    .container-nav {
-        flex-direction: column;
-    }
-
-    header {
-        text-align: center
-    }
 
     .nav-list{
         flex-direction:column;
@@ -95,10 +178,14 @@ a:focus {
     .nav-list-item {
         margin: .5em 0;
     }
-
 }
 
-
+/* articles */
+.article-featured {
+    border-bottom: #707070 1px solid;
+    padding-bottom: 2em;
+    margin-bottom: 2em; 
+}
 
 
 
